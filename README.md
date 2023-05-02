@@ -43,7 +43,7 @@ Demo Video of the android application.
 https://drive.google.com/file/d/1Onddbg8uyzMbZRVrY3OZ_0bZaB0Z9izH/view?usp=share_link
 ## Release Apk.
 
-https://github.com/Parth-Thakar/lets-shop/blob/main/app/release/lets_shop.apk
+https://github.com/Parth-Thakar/lets-shop/raw/main/app/release/lets_shop.apk
 ## Screenshots
 
 Screenshots and Video 
