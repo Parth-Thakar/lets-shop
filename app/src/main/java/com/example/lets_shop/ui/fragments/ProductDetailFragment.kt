@@ -90,6 +90,10 @@ class ProductDetailFragment : Fragment() {
         // function to save the product inside the sharedPrefs
         addToFav(data)
 
+        binding.btnBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         return binding.root
     }
 
