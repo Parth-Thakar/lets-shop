@@ -9,11 +9,13 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: ProductRepository): ViewModel() {
 
+    // creating the liveData so that we can observe it later. in UI
     val productsLiveData : LiveData<List<Product>>
     get() = repository.products
 
 
     init {
+        // launching the coroutineScope to get the products.
         viewModelScope.launch {
             repository.getProducts()
         }

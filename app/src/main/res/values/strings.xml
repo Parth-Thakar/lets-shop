@@ -9,4 +9,17 @@
     <string name="not_found_display_text">Oops Not Found !</string>
     <string name="product_dummy_title">Bag</string>
     <string name="product_dummy_price">150 $</string>
+    <string name="home_frag_type">home</string>
+    <string name="search_frag_type">search</string>
+    <string name="saved_frag_type">saved</string>
+    <string name="bitmap_image_title">title</string>
+    <string name="share_text">Share</string>
+    <string name="sharedprefs_key">watchlist</string>
+    <string name="category">Category</string>
+    <string name="share_now">Share Now</string>
+    <string name="cold_creamy_so_thick_that_your_straw_stands_straight_up_and_filled_with_juicy_berries">Cold, creamy, so thick that your straw stands straight up, and filled with juicy berries.</string>
+    <string name="_11">$11</string>
+    <string name="dummy_description">Dummy Description</string>
+    <string name="product_quant">1</string>
+    <string name="product_title_text">Diamond Ring</string>
 </resources>

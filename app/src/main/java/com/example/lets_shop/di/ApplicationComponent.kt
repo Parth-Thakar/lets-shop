@@ -6,6 +6,8 @@ import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
 
+
+//Component class i.e. connector component of Dagger to connect the consumer class and the provider and module class.
 @Singleton
 @Component(modules = [NetworkModule::class, DatabaseModule::class])
 interface ApplicationComponent {

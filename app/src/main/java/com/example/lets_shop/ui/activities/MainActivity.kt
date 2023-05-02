@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         mainViewModel = ViewModelProvider(this, mainViewModelFactory).get(MainViewModel::class.java)
 
 
+        // If the network is not available suggesting the user to turned on the internet to fetch the fresh data, using alert dialog box.
+
         if (!NetworkUtils.isInternetAvailable(this)) {
             // Create the object of AlertDialog Builder class
             val builder = AlertDialog.Builder(this)

@@ -1,5 +1,6 @@
 package com.example.lets_shop.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +15,7 @@ import com.example.lets_shop.ui.fragments.HomeFragmentDirections
 import com.example.lets_shop.ui.fragments.SavedFragmentDirections
 import com.example.lets_shop.ui.fragments.SearchFragmentDirections
 
-
+// Adapter class for the recyclerview used in the application.
 class ProductListAdapter(val context: Context, var list: List<Product>, val fragmentType: String) :
     RecyclerView.Adapter<ProductListAdapter.ProductListViewHolder>() {
 
@@ -25,36 +26,38 @@ class ProductListAdapter(val context: Context, var list: List<Product>, val frag
         )
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ProductListViewHolder, position: Int) {
         val item = list[position]
 
+        //setting up the title and the price of recyclerview product
         holder.binding.productTitleTextView.text = item.title
         holder.binding.productPriceTextView.text = item.price.toString() + "$"
 
+        //setting up the imageView of recyclerview product item
         Glide.with(context)
             .load(item.image)
             .thumbnail(Glide.with(context).load(R.drawable.spinner))
             .into(holder.binding.productImageView)
 
-
+        // logic to check which fragment is calling the ProductDetailFragment so that it can navigate using the direction
+        // class of that fragment generated in build.
         holder.itemView.setOnClickListener {
-            if (fragmentType == "home") {
+            if (fragmentType == context.getString(R.string.home_frag_type)) {
                 findNavController(it).navigate(
                     HomeFragmentDirections.actionHomeFragmentToProductDetailFragment(item)
                 )
             }
-            if (fragmentType == "search") {
+            if (fragmentType == context.getString(R.string.search_frag_type)) {
                 findNavController(it).navigate(
                     SearchFragmentDirections.actionSearchFragmentToProductDetailFragment(item)
                 )
             }
-            if (fragmentType == "saved") {
+            if (fragmentType == context.getString(R.string.saved_frag_type)) {
                 findNavController(it).navigate(
                     SavedFragmentDirections.actionSavedFragmentToProductDetailFragment(item)
                 )
             }
-
-
         }
     }
 

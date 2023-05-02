@@ -6,6 +6,7 @@ import com.example.lets_shop.repository.ProductRepository
 import com.example.lets_shop.viewmodels.MainViewModel
 import javax.inject.Inject
 
+// Constructor injection to get the instance of product repo using Dagger.
 class MainViewModelFactory @Inject constructor(private val repository: ProductRepository) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

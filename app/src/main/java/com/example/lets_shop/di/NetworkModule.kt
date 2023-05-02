@@ -15,6 +15,7 @@ import javax.inject.Singleton
 @Module
 class NetworkModule {
 
+    // Module class for returning the instance of retrofit
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit {

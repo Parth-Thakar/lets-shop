@@ -4,6 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
+// data class of the product which is the entity class for the roomDB too.
+
 @Entity
 data class Product(
     val category: String,

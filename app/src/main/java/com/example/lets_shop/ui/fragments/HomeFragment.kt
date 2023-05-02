@@ -15,23 +15,27 @@ import com.example.lets_shop.viewmodels.MainViewModel
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
+    // fetching the same mainViewModel instance from the activity.
     private val mainViewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-         //inflating the layout
+        //inflating the layout
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
 
-
+        // setting up the recyclerview
         binding.productListRecyclerView.setHasFixedSize(true)
         binding.productListRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        mainViewModel.productsLiveData.observe(viewLifecycleOwner) {
 
+        // adding observables in the livedata of viewmodel
+        mainViewModel.productsLiveData.observe(viewLifecycleOwner) {
+            //setting up the adapter
             binding.productListRecyclerView.adapter =
-                ProductListAdapter(requireContext(), it, "home")
+                ProductListAdapter(requireContext(), it, getString(R.string.home_frag_type))
+            // removing the visibility of the SpinKitView after loading the data on UI
             binding.spinKitViewHome.visibility = View.GONE
 
         }

@@ -13,10 +13,11 @@ import javax.inject.Singleton
 @Module
 class DatabaseModule {
 
+    // Module class for returining the database instance
     @Singleton
     @Provides
-    fun provideProductDB(context : Context) : ProductsDB {
-        return Room.databaseBuilder(context, ProductsDB::class.java,"ProductDB").build()
+    fun provideProductDB(context: Context): ProductsDB {
+        return Room.databaseBuilder(context, ProductsDB::class.java, "ProductDB").build()
     }
 
 }
