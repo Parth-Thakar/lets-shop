@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="divider" type="id" />
+    <item name="rounded_bg" type="id" />
+    <item name="iv_item" type="id" />
+    <item name="tv_item_name" type="id" />
+    <item name="ratingBar" type="id" />
+    <item name="tv_item_rating" type="id" />
+    <item name="btn_fav" type="id" />
+    <item name="btn_minus" type="id" />
+    <item name="tv_item_quantity" type="id" />
+    <item name="btn_plus" type="id" />
+    <item name="tv_item_price" type="id" />
+    <item name="tv_item_detail" type="id" />
+    <item name="btn_back" type="id" />
+    <item name="btn_order" type="id" />
+    <item name="catTextView" type="id" />
+</resources>

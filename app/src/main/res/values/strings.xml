@@ -7,4 +7,6 @@
     <string name="text_desc_home_fragment">Go through our products</string>
     <string name="search_edit_text_hint_text">Search in Products</string>
     <string name="not_found_display_text">Oops Not Found !</string>
+    <string name="product_dummy_title">Bag</string>
+    <string name="product_dummy_price">150 $</string>
 </resources>
