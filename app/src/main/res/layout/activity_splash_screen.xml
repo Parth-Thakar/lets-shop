@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Let's Shop"
+        android:text="@string/splash_screen_display_text"
         android:fontFamily="@font/montserrat_medium"
         android:textAlignment="center"
         android:textColor="@color/white"

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Let\'s_Shop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_screen_display_text">Let\'s Shop</string>
+    <string name="welcome_text_home_fragment">Welcome !</string>
+    <string name="text_desc_home_fragment">Go through our products</string>
+    <string name="search_edit_text_hint_text">Search in Products</string>
+    <string name="not_found_display_text">Oops Not Found !</string>
+</resources>

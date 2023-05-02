@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.jumpingmindassignment_d.ui.fragments.HomeFragment"
+        android:name="com.example.lets_shop.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.jumpingmindassignment_d.ui.fragments.SearchFragment"
+        android:name="com.example.lets_shop.ui.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/savedFragment"
-        android:name="com.example.jumpingmindassignment_d.ui.fragments.SavedFragment"
+        android:name="com.example.lets_shop.ui.fragments.SavedFragment"
         android:label="fragment_saved"
         tools:layout="@layout/fragment_saved" >
         <action
@@ -34,12 +34,12 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailFragment"
-        android:name="com.example.jumpingmindassignment_d.ui.fragments.ProductDetailFragment"
+        android:name="com.example.lets_shop.ui.fragments.ProductDetailFragment"
         android:label="fragment_product_detail"
         tools:layout="@layout/fragment_product_detail" >
         <argument
             android:name="productargs"
-            app:argType="com.example.jumpingmindassignment_d.models.Product"
+            app:argType="com.example.lets_shop.models.Product"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
