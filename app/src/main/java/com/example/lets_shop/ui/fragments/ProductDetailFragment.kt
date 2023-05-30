@@ -149,6 +149,8 @@ class ProductDetailFragment : Fragment() {
         editor.putString(getString(R.string.sharedprefs_key), json)
         editor.apply()
     }
+
+
     // simple process to reading the data from the sharedprefrences.
     private fun readData() {
         val sharedPreferences =

@@ -7,6 +7,7 @@ import com.example.lets_shop.models.Product
 
 @Database(entities = [Product::class], version = 1)
 abstract class ProductsDB : RoomDatabase() {
+
     // abstract class to generate the Dao instance
     abstract fun getProductDao() : ProductsDao
 
